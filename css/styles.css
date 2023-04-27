@@ -55,6 +55,7 @@ button {
   --img-title: #FFFFFF;
   --x-modal-color: #2196f3;
   --x-modal-background: #757575;
+  --footer-newsletter-label: #fff;
 }
 
 .logo-header {
@@ -654,4 +655,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .active {
   color: var(--active-color);
+}
+
+.footer-newsletter-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--footer-newsletter-label);
 }
