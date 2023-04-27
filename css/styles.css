@@ -56,6 +56,9 @@ button {
   --x-modal-color: #2196f3;
   --x-modal-background: #757575;
   --footer-newsletter-label: #fff;
+  --footer-background-button: #2196F3;
+  --footer-text-button: #fff;
+  --footer-newsletter-email: #2F303A;
 }
 
 .logo-header {
@@ -664,9 +667,43 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
   color: var(--footer-newsletter-label);
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footer-newsletter-div {
   margin-top: 12px;
   margin-left: 78px;
+  display: flex;
+}
+
+.footer-newsletter-button {
+  width: 200px;
+  height: 50px;
+  background: var(--footer-background-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: var(--footer-text-button);
+margin-left: 12px;
+margin-top: 36px;
+fill: #FFF;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+
+.footer-newsletter-email {
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+width: 358px;
+height: 50px;
+background: var(--footer-newsletter-email);
+padding-left: 16px;
 }
