@@ -284,9 +284,38 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
+        <div class="only-close-button">
         <button class="x-modal-close" data-modal-close type="button">
           <svg width="11" height="11"><use href="./images/icons.svg#icon-Vector"></use></svg>
         </button>
+        </div>
+        <p class="modal-p">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="modal-form">
+          <label>
+            Imie<br/>
+            <div>
+          <svg class="modal-svg-person" width="18" height="18"><use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg><input class="modal-input" type="text" name="name"/>
+            </div>
+          </label>
+          <label>
+            Telefon<br/>
+          <svg class="modal-svg-phone" width="18" height="18"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg><input class="modal-input" type="tel" name="tel"/>
+          </label>
+          <label>
+            Email<br/>
+          <svg class="modal-svg-email" width="18" height="18"><use href="./images/icons.svg#icon-email-black-18dp-1"></use></svg><input class="modal-input" type="email" name="email"/>
+          </label>
+          <label>
+            Komentarz<br/>
+          <textarea class="modal-textarea" name="komentarz" placeholder="Wprowadź tekst"></textarea>
+          </label>
+          <div class="modal-regulamin">
+          <input type="checkbox"/><p>Oświadczam iż akceptuję <a class="privacy" href="#">Regulamin</a> i <a class="privacy" href="#">Politykę Prywatności.</a></p>
+          </div>
+          <div class="modal-buton-position">
+          <button class="modal-button" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
 

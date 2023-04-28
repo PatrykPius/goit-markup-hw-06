@@ -59,6 +59,11 @@ button {
   --footer-background-button: #2196F3;
   --footer-text-button: #fff;
   --footer-newsletter-email: #2F303A;
+  --modal-buton-background: #2196f3;
+  --modal-buton-text: #fff;
+  --modal-regulamin: #757575;
+  --modal-privacy: #2196F3;
+  --modal-focus: #2196f3;
 }
 
 .logo-header {
@@ -622,7 +627,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #FFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .is-hidden .modal {
@@ -706,4 +711,96 @@ width: 358px;
 height: 50px;
 background: var(--footer-newsletter-email);
 padding-left: 16px;
+font-size: 16px;
+line-height: 20px;
+}
+
+.only-close-button {
+  text-align: right;
+}
+
+.modal-p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column; 
+  margin:  12px 40px 20px 40px;
+  font-size: 12px;
+  position: relative;
+}
+
+.modal-input {
+  width: 448px;
+height: 40px;
+margin-top: 4px;
+margin-bottom: 10px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.modal-textarea {
+  width: 448px;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+margin-top: 4px;
+padding: 12px 16px;
+resize: none;
+}
+
+.modal-svg-person {
+  position: absolute;
+  top: 28px;
+  left: 10px;
+}
+
+.modal-svg-phone {
+  position: absolute;
+  left: 10px;
+  top: 97px;
+}
+
+.modal-svg-email {
+  position: absolute;
+  left: 10px;
+  top: 163px;
+}
+
+.modal-button {
+  width: 200px;
+height: 50px;
+background: var(--modal-buton-background);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: var(--modal-buton-text);
+}
+
+.modal-buton-position {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-regulamin {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+color: var(--modal-regulamin);
+}
+
+.privacy {
+  color: var(--modal-privacy);
 }
