@@ -64,6 +64,7 @@ button {
   --modal-regulamin: #757575;
   --modal-privacy: #2196F3;
   --modal-focus: #2196f3;
+  --modal-checkbox: #2196f3;
 }
 
 .logo-header {
@@ -801,6 +802,25 @@ color: var(--modal-buton-text);
 color: var(--modal-regulamin);
 }
 
+.modal-checkbox-regulamin {
+  background: var(--modal-checkbox);
+  fill: white;
+  width: 16px;
+height: 15px;
+border-radius: 2px;
+}
+
 .privacy {
   color: var(--modal-privacy);
 }
+
+.checkbox__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* .checkbox__label {
+
+} */
