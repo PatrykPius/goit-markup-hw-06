@@ -65,6 +65,9 @@ button {
   --modal-privacy: #2196F3;
   --modal-focus: #2196f3;
   --modal-checkbox: #2196f3;
+  --modal-input-border: #2196f3;
+  --modal-input-icon: #2196f3;
+  --footer-input-text: #fff;
 }
 
 .logo-header {
@@ -714,6 +717,7 @@ background: var(--footer-newsletter-email);
 padding-left: 16px;
 font-size: 16px;
 line-height: 20px;
+color: var(--footer-input-text);
 }
 
 .only-close-button {
@@ -743,6 +747,13 @@ margin-top: 4px;
 margin-bottom: 10px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 42px;
+}
+
+.modal-input:is(:active, :focus, :hover) {
+  border: none;
+  border: 1px solid var(--modal-input-border);
+  border-radius: 4px;
 }
 
 .modal-textarea {
@@ -774,7 +785,7 @@ resize: none;
 }
 
 .modal-button {
-  width: 200px;
+width: 200px;
 height: 50px;
 background: var(--modal-buton-background);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -784,6 +795,7 @@ font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.06em;
 color: var(--modal-buton-text);
+border: none;
 }
 
 .modal-buton-position {
@@ -800,6 +812,7 @@ color: var(--modal-buton-text);
   line-height: 24px;
   letter-spacing: 0.03em;
 color: var(--modal-regulamin);
+position: relative;
 }
 
 .modal-checkbox-regulamin {
@@ -824,3 +837,7 @@ border-radius: 2px;
 /* .checkbox__label {
 
 } */
+
+.modal-input:is(:hover, :focus) + svg {
+fill: var(--modal-input-icon);
+}
