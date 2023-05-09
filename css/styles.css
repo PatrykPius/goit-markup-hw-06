@@ -725,10 +725,16 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
 .footer-newsletter-email:is(:active, :focus-within, :hover) {
     border: 1px solid var(--footer-input-email-active);
     color: var(--footer-input-email-active);
+    transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-newsletter-email:is(:active, :focus-within, :hover)::placeholder {
     color: var(--footer-input-email-active);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .only-close-button {
@@ -776,6 +782,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
 .modal-textarea:is(:focus-within) {
     border: 1px solid var(--active-color);
     color: var(--active-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
@@ -854,4 +861,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
     border: none;
     border: 1px solid var(--modal-input-border);
     border-radius: 4px;
+    transition-property: fill, border ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
