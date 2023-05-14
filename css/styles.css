@@ -781,7 +781,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
 
 .modal-textarea:is(:focus-within) {
     border: 1px solid var(--active-color);
-    color: var(--active-color);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
